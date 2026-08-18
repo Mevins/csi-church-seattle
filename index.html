@@ -11,7 +11,6 @@
     content="CSI Church of Seattle - Church of South India. Join us for worship, prayer, Holy Communion and fellowship."
   >
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -36,13 +35,10 @@
       --gold-dark: #9c7932;
 
       --cream: #f7f4ec;
-      --cream-dark: #eee9dc;
-
       --white: #ffffff;
 
       --text: #263441;
       --muted: #697682;
-
       --border: #e2ded4;
 
       --serif: "Cormorant Garamond", Georgia, serif;
@@ -97,7 +93,7 @@
     }
 
     .section {
-      padding: 110px 0;
+      padding: 100px 0;
     }
 
     .eyebrow {
@@ -149,7 +145,7 @@
 
       z-index: 1000;
 
-      background: rgba(7, 24, 39, 0.96);
+      background: rgba(7, 24, 39, 0.97);
 
       border-bottom: 1px solid rgba(255,255,255,0.08);
 
@@ -164,6 +160,20 @@
       justify-content: space-between;
     }
 
+
+    /* =========================================
+       EDITABLE LOGO
+       
+       Put logo.png in the SAME folder
+       as index.html.
+       
+       Repository:
+       
+       csi-church-seattle/
+       ├── index.html
+       └── logo.png
+    ========================================= */
+
     .logo {
       display: flex;
       align-items: center;
@@ -172,17 +182,17 @@
       color: var(--white);
     }
 
-    .cross {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .logo-image {
+      width: 52px;
+      height: 52px;
 
-      width: 42px;
-      height: 42px;
+      object-fit: contain;
 
-      color: var(--gold);
+      border-radius: 50%;
 
-      font-size: 31px;
+      background: white;
+
+      padding: 4px;
     }
 
     .logo-text {
@@ -192,7 +202,9 @@
 
     .logo-text strong {
       font-family: var(--serif);
+
       font-size: 22px;
+
       line-height: 1;
     }
 
@@ -205,17 +217,20 @@
       font-weight: 600;
 
       letter-spacing: 2px;
+
       text-transform: uppercase;
     }
 
     .navigation {
       display: flex;
       align-items: center;
+
       gap: 30px;
     }
 
     .navigation a {
-      color: #ffffff;
+      color: white;
+
       font-size: 13px;
       font-weight: 500;
 
@@ -230,11 +245,13 @@
       display: none;
 
       border: 0;
+
       background: transparent;
 
       color: white;
 
       font-size: 27px;
+
       cursor: pointer;
     }
 
@@ -246,7 +263,7 @@
     .hero {
       position: relative;
 
-      min-height: 760px;
+      min-height: 720px;
 
       display: flex;
       align-items: center;
@@ -282,6 +299,7 @@
       color: rgba(255,255,255,0.035);
 
       font-size: 420px;
+
       line-height: 1;
     }
 
@@ -303,9 +321,10 @@
 
     .hero-content {
       position: relative;
+
       z-index: 2;
 
-      max-width: 780px;
+      max-width: 800px;
     }
 
     .hero h1 {
@@ -314,6 +333,7 @@
       color: white;
 
       font-size: clamp(58px, 8vw, 96px);
+
       line-height: 0.9;
     }
 
@@ -337,7 +357,9 @@
 
     .hero-buttons {
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 13px;
     }
 
@@ -370,6 +392,7 @@
 
     .btn-primary {
       background: var(--gold);
+
       color: var(--navy-dark);
     }
 
@@ -385,12 +408,59 @@
 
     .btn-outline:hover {
       border-color: var(--gold-light);
+
       color: var(--gold-light);
     }
 
     .btn-light {
       background: white;
+
       color: var(--navy);
+    }
+
+
+    /* =========================================
+       NEXT SERVICE
+    ========================================= */
+
+    .next-service {
+      padding: 42px 0;
+
+      background: var(--gold);
+    }
+
+    .next-service-inner {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 35px;
+    }
+
+    .next-service .eyebrow {
+      margin-bottom: 5px;
+
+      color: var(--navy);
+    }
+
+    .next-service h2 {
+      margin-bottom: 5px;
+
+      color: var(--navy);
+
+      font-size: clamp(32px, 4vw, 48px);
+    }
+
+    .next-service p {
+      margin: 0;
+
+      color: #394454;
+    }
+
+    .service-time {
+      font-weight: 700;
     }
 
 
@@ -431,12 +501,9 @@
       margin-bottom: 50px;
     }
 
-    .section-heading > p:last-child {
-      font-size: 17px;
-    }
-
     .service-card {
       display: flex;
+
       align-items: center;
 
       gap: 28px;
@@ -457,6 +524,7 @@
       height: 65px;
 
       display: flex;
+
       align-items: center;
       justify-content: center;
 
@@ -480,6 +548,7 @@
       font-weight: 700;
 
       text-transform: uppercase;
+
       letter-spacing: 2px;
     }
 
@@ -498,6 +567,7 @@
       display: flex;
 
       align-items: center;
+
       justify-content: space-between;
 
       gap: 30px;
@@ -530,6 +600,7 @@
 
     .centered {
       margin-left: auto;
+
       margin-right: auto;
 
       text-align: center;
@@ -538,7 +609,7 @@
     .event-grid {
       display: grid;
 
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
 
       gap: 20px;
     }
@@ -624,6 +695,7 @@
       font-weight: 700;
 
       text-transform: uppercase;
+
       letter-spacing: 1.5px;
     }
 
@@ -643,48 +715,112 @@
 
 
     /* =========================================
-       NOTICE
+       LOCATION
     ========================================= */
 
-    .notice {
-      padding: 75px 0;
+    .location {
+      background: white;
+    }
+
+    .location-box {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 30px;
+
+      align-items: stretch;
+    }
+
+    .location-info {
+      padding: 45px;
 
       background: var(--navy);
-    }
-
-    .notice-box {
-      display: flex;
-
-      align-items: center;
-      justify-content: space-between;
-
-      gap: 40px;
-    }
-
-    .notice h2 {
-      max-width: 650px;
-
-      margin-bottom: 10px;
 
       color: white;
     }
 
-    .notice p:not(.eyebrow) {
-      color: #bdc9d3;
+    .location-info h2 {
+      color: white;
+
+      font-size: 52px;
     }
 
-    .notice .btn {
-      flex-shrink: 0;
+    .location-info p {
+      color: #cbd5de;
+    }
+
+    .address {
+      margin: 28px 0;
+
+      padding-left: 20px;
+
+      border-left: 3px solid var(--gold);
+    }
+
+    .address strong {
+      display: block;
+
+      margin-bottom: 5px;
+
+      color: white;
+
+      font-size: 17px;
+    }
+
+    .address span {
+      color: #cbd5de;
+    }
+
+    .map-placeholder {
+      min-height: 350px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 30px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #e9e5da,
+          #f7f4ec
+        );
+
+      border: 1px solid var(--border);
+
+      text-align: center;
+    }
+
+    .map-placeholder-content {
+      max-width: 380px;
+    }
+
+    .map-icon {
+      font-size: 48px;
+
+      margin-bottom: 10px;
+    }
+
+    .map-placeholder h3 {
+      color: var(--navy);
+
+      font-size: 36px;
+
+      margin-bottom: 10px;
+    }
+
+    .map-placeholder p {
+      font-size: 13px;
     }
 
 
     /* =========================================
        CONTACT
     ========================================= */
-
-    .contact {
-      background: white;
-    }
 
     .contact-details {
       display: grid;
@@ -696,6 +832,7 @@
 
     .contact-item {
       display: flex;
+
       flex-direction: column;
 
       padding: 30px;
@@ -714,6 +851,7 @@
       font-weight: 700;
 
       text-transform: uppercase;
+
       letter-spacing: 2px;
     }
 
@@ -735,7 +873,7 @@
 
 
     /* =========================================
-       EXTERNAL / NORCAL
+       NORCAL
     ========================================= */
 
     .external {
@@ -775,6 +913,7 @@
       display: flex;
 
       align-items: flex-start;
+
       justify-content: space-between;
 
       gap: 50px;
@@ -837,6 +976,7 @@
         position: absolute;
 
         top: 82px;
+
         left: 0;
         right: 0;
 
@@ -861,7 +1001,8 @@
         display: block;
       }
 
-      .two-column {
+      .two-column,
+      .location-box {
         grid-template-columns: 1fr;
 
         gap: 35px;
@@ -871,7 +1012,7 @@
         grid-template-columns: 1fr;
       }
 
-      .notice-box {
+      .next-service-inner {
         flex-direction: column;
 
         align-items: flex-start;
@@ -906,8 +1047,9 @@
         font-size: 8px;
       }
 
-      .cross {
-        font-size: 26px;
+      .logo-image {
+        width: 45px;
+        height: 45px;
       }
 
       .hero {
@@ -974,6 +1116,14 @@
         flex-wrap: wrap;
       }
 
+      .location-info {
+        padding: 30px;
+      }
+
+      .location-info h2 {
+        font-size: 45px;
+      }
+
     }
 
   </style>
@@ -983,17 +1133,714 @@
 <body>
 
 
-  <!-- =====================================
-       HEADER
-  ====================================== -->
+<!-- =========================================
+     HEADER
+========================================= -->
 
-  <header class="site-header">
+<header class="site-header">
 
-    <div class="container nav-container">
+  <div class="container nav-container">
 
-      <a href="#home" class="logo">
+    <a href="#home" class="logo">
 
-        <span class="cross">✝</span>
+      <!--
+        EDITABLE LOGO
+
+        Put your logo in the same folder as
+        index.html and name it:
+
+        logo.png
+
+        Example:
+
+        csi-church-seattle/
+        ├── index.html
+        └── logo.png
+      -->
+
+      <img
+        src="logo.png"
+        alt="CSI Church of Seattle Logo"
+        class="logo-image"
+      >
+
+      <span class="logo-text">
+
+        <strong>
+          CSI Church of Seattle
+        </strong>
+
+        <small>
+          Church of South India
+        </small>
+
+      </span>
+
+    </a>
+
+
+    <button
+      class="menu-toggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+
+    <nav class="navigation">
+
+      <a href="#home">
+        Home
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#worship">
+        Worship
+      </a>
+
+      <a href="#events">
+        Events
+      </a>
+
+      <a href="#location">
+        Location
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section id="home" class="hero">
+
+  <div class="container hero-content">
+
+    <p class="eyebrow">
+      Church of South India · Seattle
+    </p>
+
+    <h1>
+      A place to
+      <span>worship, pray &amp; fellowship.</span>
+    </h1>
+
+    <p class="hero-description">
+      Welcome to the CSI Church of Seattle.
+
+      Join us in worship, prayer, Holy Communion,
+      and fellowship as we grow together in faith.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a
+        href="#worship"
+        class="btn btn-primary"
+      >
+        Worship With Us
+      </a>
+
+      <a
+        href="#events"
+        class="btn btn-outline"
+      >
+        Upcoming Events
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     NEXT SERVICE
+========================================= -->
+
+<section class="next-service">
+
+  <div class="container next-service-inner">
+
+    <div>
+
+      <p class="eyebrow">
+        Next Service
+      </p>
+
+      <h2>
+        Holy Communion Service
+      </h2>
+
+      <p>
+        <span class="service-time">
+          Saturday, August 29 · 11:00 AM
+        </span>
+      </p>
+
+      <p>
+        📍 12401 SE 320th St, Auburn, WA 98092
+      </p>
+
+    </div>
+
+
+    <a
+      href="#location"
+      class="btn btn-light"
+    >
+      Get Directions
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section id="about" class="section about">
+
+  <div class="container two-column">
+
+    <div>
+
+      <p class="eyebrow dark">
+        Welcome
+      </p>
+
+      <h2>
+        Growing together in Christ
+      </h2>
+
+    </div>
+
+
+    <div class="about-text">
+
+      <p>
+        CSI Church of Seattle is a congregation
+        of the Church of South India (CSI).
+      </p>
+
+      <p>
+        We gather together for worship, prayer,
+        Holy Communion, and Christian fellowship.
+        Our services provide an opportunity for
+        families and individuals to come together,
+        encourage one another, and celebrate our faith.
+      </p>
+
+      <p>
+        Everyone is warmly invited to join us.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     WORSHIP
+========================================= -->
+
+<section id="worship" class="section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <p class="eyebrow dark">
+        Worship
+      </p>
+
+      <h2>
+        Join us in worship
+      </h2>
+
+      <p>
+        CSI Church of Seattle holds a Church of South
+        India (CSI) service once a month on a Saturday
+        at 11:00 AM.
+      </p>
+
+      <p>
+        The exact date will be announced in advance.
+      </p>
+
+    </div>
+
+
+    <div class="service-card">
+
+      <div class="service-icon">
+        ✝
+      </div>
+
+      <div>
+
+        <span class="card-label">
+          Monthly CSI Service
+        </span>
+
+        <h3>
+          Saturday · 11:00 AM
+        </h3>
+
+        <p>
+          Exact service dates will be announced
+          in advance. Please check this website
+          regularly for updates.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="pastor-card">
+
+      <div>
+
+        <span class="card-label">
+          Guest Pastor
+        </span>
+
+        <h3>
+          Rev. Jerin Thomas George
+        </h3>
+
+      </div>
+
+      <a href="tel:+14087024967">
+        408-702-4967
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     EVENTS
+========================================= -->
+
+<section id="events" class="section events">
+
+  <div class="container">
+
+    <div class="section-heading centered">
+
+      <p class="eyebrow dark">
+        Save the Dates
+      </p>
+
+      <h2>
+        Upcoming gatherings
+      </h2>
+
+      <p>
+        Please save these dates and plan to attend them.
+      </p>
+
+    </div>
+
+
+    <div class="event-grid">
+
+
+      <!-- AUGUST 29 -->
+
+      <article class="event-card featured">
+
+        <div class="event-date">
+
+          <span>
+            AUG
+          </span>
+
+          <strong>
+            29
+          </strong>
+
+          <small>
+            Saturday
+          </small>
+
+        </div>
+
+
+        <div class="event-info">
+
+          <span class="event-type">
+            Holy Communion
+          </span>
+
+          <h3>
+            Holy Communion Service
+          </h3>
+
+          <p>
+            Saturday · 11:00 AM
+          </p>
+
+          <p>
+            📍 Auburn, WA
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- SEPTEMBER 12 -->
+
+      <article class="event-card">
+
+        <div class="event-date">
+
+          <span>
+            SEP
+          </span>
+
+          <strong>
+            12
+          </strong>
+
+          <small>
+            Saturday
+          </small>
+
+        </div>
+
+
+        <div class="event-info">
+
+          <span class="event-type">
+            Special Service
+          </span>
+
+          <h3>
+            Holy Communion Service &amp;
+            Anglican Archbishop Visit
+          </h3>
+
+          <p>
+            Saturday · 10:00 AM
+          </p>
+
+          <p>
+            📍 Auburn, WA
+          </p>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     LOCATION
+========================================= -->
+
+<section id="location" class="section location">
+
+  <div class="container">
+
+    <div class="location-box">
+
+
+      <div class="location-info">
+
+        <p class="eyebrow">
+          Where We Meet
+        </p>
+
+        <h2>
+          Join us in person.
+        </h2>
+
+        <p>
+          We would love to welcome you to our
+          next worship service.
+        </p>
+
+
+        <div class="address">
+
+          <strong>
+            CSI Church of Seattle
+          </strong>
+
+          <span>
+            12401 SE 320th St<br>
+            Auburn, WA 98092
+          </span>
+
+        </div>
+
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=12401+SE+320th+St%2C+Auburn%2C+WA+98092"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-light"
+        >
+          Get Directions
+        </a>
+
+      </div>
+
+
+
+      <div class="map-placeholder">
+
+        <div class="map-placeholder-content">
+
+          <div class="map-icon">
+            📍
+          </div>
+
+          <h3>
+            Auburn, Washington
+          </h3>
+
+          <p>
+            12401 SE 320th St<br>
+            Auburn, WA 98092
+          </p>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=12401+SE+320th+St%2C+Auburn%2C+WA+98092"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            Open in Google Maps
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section id="contact" class="section">
+
+  <div class="container two-column">
+
+    <div>
+
+      <p class="eyebrow dark">
+        Contact
+      </p>
+
+      <h2>
+        We'd love to hear from you.
+      </h2>
+
+      <p>
+        For questions about services, events,
+        or the CSI Church of Seattle, please
+        reach out to us.
+      </p>
+
+    </div>
+
+
+    <div class="contact-details">
+
+
+      <!-- GUEST PASTOR -->
+
+      <div class="contact-item">
+
+        <span>
+          Guest Pastor
+        </span>
+
+        <strong>
+          Rev. Jerin Thomas George
+        </strong>
+
+        <a href="tel:+14087024967">
+          408-702-4967
+        </a>
+
+      </div>
+
+
+      <!-- CHURCH CONTACTS -->
+
+      <div class="contact-item">
+
+        <span>
+          Church Contacts
+        </span>
+
+        <a href="tel:+12068327904">
+          206-832-7904
+        </a>
+
+        <a href="tel:+12065510142">
+          206-551-0142
+        </a>
+
+      </div>
+
+
+      <!-- ADDRESS -->
+
+      <div class="contact-item">
+
+        <span>
+          Meeting Location
+        </span>
+
+        <strong>
+          12401 SE 320th St
+        </strong>
+
+        <span>
+          Auburn, WA 98092
+        </span>
+
+      </div>
+
+
+      <!-- NORCAL -->
+
+      <div class="contact-item">
+
+        <span>
+          Additional Information
+        </span>
+
+        <a
+          href="https://csichurchnorcal.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CSI Church of NorCal
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     NORCAL
+========================================= -->
+
+<section class="external">
+
+  <div class="container external-content">
+
+    <p class="eyebrow dark">
+      Additional Information
+    </p>
+
+    <h2>
+      Learn more about the CSI community
+    </h2>
+
+    <p>
+      Please check the CSI Church of NorCal
+      website for additional information.
+    </p>
+
+    <a
+      href="https://csichurchnorcal.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-primary"
+    >
+      Visit CSI Church of NorCal
+    </a>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+  <div class="container footer-content">
+
+    <div>
+
+      <a
+        href="#home"
+        class="logo footer-logo"
+      >
+
+        <img
+          src="logo.png"
+          alt="CSI Church of Seattle Logo"
+          class="logo-image"
+        >
 
         <span class="logo-text">
 
@@ -1010,688 +1857,111 @@
       </a>
 
 
-      <button
-        class="menu-toggle"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-      >
-        ☰
-      </button>
-
-
-      <nav class="navigation">
-
-        <a href="#home">
-          Home
-        </a>
-
-        <a href="#about">
-          About
-        </a>
-
-        <a href="#worship">
-          Worship
-        </a>
-
-        <a href="#events">
-          Events
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
-
-      </nav>
+      <p>
+        A community gathered in faith,
+        worship, prayer, and fellowship.
+      </p>
 
     </div>
 
-  </header>
 
+    <div class="footer-links">
 
+      <a href="#about">
+        About
+      </a>
 
-  <main>
+      <a href="#worship">
+        Worship
+      </a>
 
+      <a href="#events">
+        Events
+      </a>
 
-    <!-- =====================================
-         HERO
-    ====================================== -->
+      <a href="#location">
+        Location
+      </a>
 
-    <section id="home" class="hero">
-
-      <div class="container hero-content">
-
-        <p class="eyebrow">
-          Church of South India · Seattle
-        </p>
-
-
-        <h1>
-
-          Celebrating Our Roots,
-
-          <span>
-            Cultivating Our Christian Faith
-          </span>
-
-        </h1>
-
-
-        <p class="hero-description">
-
-          Welcome to the CSI Church of Seattle.
-
-          Join us in worship, prayer, Holy Communion,
-          and fellowship as we grow together in faith.
-
-        </p>
-
-
-        <div class="hero-buttons">
-
-          <a
-            href="#worship"
-            class="btn btn-primary"
-          >
-            Worship With Us
-          </a>
-
-
-          <a
-            href="#events"
-            class="btn btn-outline"
-          >
-            Upcoming Events
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================
-         ABOUT
-    ====================================== -->
-
-    <section id="about" class="section about">
-
-      <div class="container two-column">
-
-        <div>
-
-          <p class="eyebrow dark">
-            Welcome
-          </p>
-
-          <h2>
-            Growing together in Christ
-          </h2>
-
-        </div>
-
-
-        <div class="about-text">
-
-          <p>
-            CSI Church of Seattle is a congregation
-            of the Church of South India (CSI).
-          </p>
-
-          <p>
-            We gather together for worship, prayer,
-            Holy Communion, and Christian fellowship.
-            Our services provide an opportunity for
-            families and individuals to come together,
-            encourage one another, and celebrate our faith.
-          </p>
-
-          <p>
-            Everyone is warmly invited to join us.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================
-         WORSHIP
-    ====================================== -->
-
-    <section id="worship" class="section worship">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <p class="eyebrow dark">
-            Worship
-          </p>
-
-          <h2>
-            Join us in worship
-          </h2>
-
-          <p>
-            CSI Church of Seattle holds a Church of South
-            India (CSI) service once a month on a Saturday
-            at 11:00 AM.
-          </p>
-
-          <p>
-            The exact date will be announced in advance.
-          </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-          <div class="service-icon">
-            ✝
-          </div>
-
-          <div>
-
-            <span class="card-label">
-              Monthly CSI Service
-            </span>
-
-            <h3>
-              Saturday · 11:00 AM
-            </h3>
-
-            <p>
-              Exact service dates will be announced
-              in advance. Please check this website
-              regularly for updates.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="pastor-card">
-
-          <div>
-
-            <span class="card-label">
-              Guest Pastor
-            </span>
-
-            <h3>
-              Rev. Jerin Thomas George
-            </h3>
-
-          </div>
-
-          <a href="tel:+14087024967">
-            408-702-4967
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================
-         EVENTS
-    ====================================== -->
-
-    <section id="events" class="section events">
-
-      <div class="container">
-
-        <div class="section-heading centered">
-
-          <p class="eyebrow dark">
-            Save the Dates
-          </p>
-
-          <h2>
-            Upcoming gatherings
-          </h2>
-
-          <p>
-            Please save these dates and plan to attend them.
-          </p>
-
-        </div>
-
-
-        <div class="event-grid">
-
-
-          <!-- EVENT 1 -->
-
-          <article class="event-card">
-
-            <div class="event-date">
-
-              <span>
-                AUG
-              </span>
-
-              <strong>
-                1
-              </strong>
-
-              <small>
-                Saturday
-              </small>
-
-            </div>
-
-
-            <div class="event-info">
-
-              <span class="event-type">
-                Prayer Gathering
-              </span>
-
-              <h3>
-                Prayer at the residence of
-                Santhosh &amp; Anitha
-              </h3>
-
-              <p>
-                Saturday · 6:00 PM
-              </p>
-
-            </div>
-
-          </article>
-
-
-
-          <!-- EVENT 2 -->
-
-          <article class="event-card featured">
-
-            <div class="event-date">
-
-              <span>
-                AUG
-              </span>
-
-              <strong>
-                29
-              </strong>
-
-              <small>
-                Saturday
-              </small>
-
-            </div>
-
-
-            <div class="event-info">
-
-              <span class="event-type">
-                Holy Communion
-              </span>
-
-              <h3>
-                Holy Communion Service
-              </h3>
-
-              <p>
-                Saturday · 11:00 AM
-              </p>
-
-            </div>
-
-          </article>
-
-
-
-          <!-- EVENT 3 -->
-
-          <article class="event-card">
-
-            <div class="event-date">
-
-              <span>
-                SEP
-              </span>
-
-              <strong>
-                12
-              </strong>
-
-              <small>
-                Saturday
-              </small>
-
-            </div>
-
-
-            <div class="event-info">
-
-              <span class="event-type">
-                Special Service
-              </span>
-
-              <h3>
-                Holy Communion Service &amp;
-                Anglican Archbishop Visit
-              </h3>
-
-              <p>
-                Saturday · 10:00 AM
-              </p>
-
-            </div>
-
-          </article>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================
-         NOTICE
-    ====================================== -->
-
-    <section class="notice">
-
-      <div class="container notice-box">
-
-        <div>
-
-          <p class="eyebrow">
-            Stay Connected
-          </p>
-
-          <h2>
-            Service dates are announced in advance.
-          </h2>
-
-          <p>
-            Please check this website regularly
-            for updates and additional information.
-          </p>
-
-        </div>
-
-
-        <a
-          href="#contact"
-          class="btn btn-light"
-        >
-          Contact Us
-        </a>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================
-         CONTACT
-    ====================================== -->
-
-    <section id="contact" class="section contact">
-
-      <div class="container two-column">
-
-        <div>
-
-          <p class="eyebrow dark">
-            Contact
-          </p>
-
-          <h2>
-            We'd love to hear from you.
-          </h2>
-
-          <p>
-            For questions about services, events,
-            or the CSI Church of Seattle, please
-            reach out to us.
-          </p>
-
-        </div>
-
-
-        <div class="contact-details">
-
-
-          <!-- PASTOR -->
-
-          <div class="contact-item">
-
-            <span>
-              Guest Pastor
-            </span>
-
-            <strong>
-              Rev. Jerin Thomas George
-            </strong>
-
-            <a href="tel:+14087024967">
-              408-702-4967
-            </a>
-
-          </div>
-
-
-          <!-- CHURCH CONTACT -->
-
-          <div class="contact-item">
-
-            <span>
-              Church Contacts
-            </span>
-
-            <a href="tel:+12068327904">
-              206-832-7904
-            </a>
-
-            <a href="tel:+12065510142">
-              206-551-0142
-            </a>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================
-         NORCAL
-    ====================================== -->
-
-    <section class="external">
-
-      <div class="container external-content">
-
-        <p class="eyebrow dark">
-          Additional Information
-        </p>
-
-        <h2>
-          Learn more about the CSI community
-        </h2>
-
-        <p>
-          Please check the CSI Church of NorCal
-          website for additional information.
-        </p>
-
-
-        <a
-          href="https://csichurchnorcal.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-primary"
-        >
-          Visit CSI Church of NorCal
-        </a>
-
-      </div>
-
-    </section>
-
-
-  </main>
-
-
-
-  <!-- =====================================
-       FOOTER
-  ====================================== -->
-
-  <footer>
-
-    <div class="container footer-content">
-
-      <div>
-
-        <a
-          href="#home"
-          class="logo footer-logo"
-        >
-
-          <span class="cross">
-            ✝
-          </span>
-
-          <span class="logo-text">
-
-            <strong>
-              CSI Church of Seattle
-            </strong>
-
-            <small>
-              Church of South India
-            </small>
-
-          </span>
-
-        </a>
-
-
-        <p>
-          A community gathered in faith,
-          worship, prayer, and fellowship.
-        </p>
-
-      </div>
-
-
-      <div class="footer-links">
-
-        <a href="#about">
-          About
-        </a>
-
-        <a href="#worship">
-          Worship
-        </a>
-
-        <a href="#events">
-          Events
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
-
-      </div>
+      <a href="#contact">
+        Contact
+      </a>
 
     </div>
 
-
-    <div class="copyright">
-
-      © 2026 CSI Church of Seattle.
-      All rights reserved.
-
-    </div>
-
-  </footer>
+  </div>
 
 
+  <div class="copyright">
 
-  <!-- =====================================
-       JAVASCRIPT
-  ====================================== -->
+    © 2026 CSI Church of Seattle.
+    All rights reserved.
 
-  <script>
+  </div>
 
-    const menuButton =
-      document.querySelector(".menu-toggle");
-
-    const navigation =
-      document.querySelector(".navigation");
+</footer>
 
 
-    menuButton.addEventListener("click", () => {
 
-      navigation.classList.toggle("active");
+<!-- =========================================
+     MOBILE MENU JAVASCRIPT
+========================================= -->
 
-      const isOpen =
-        navigation.classList.contains("active");
+<script>
 
-      menuButton.setAttribute(
-        "aria-expanded",
-        isOpen
-      );
+  const menuButton =
+    document.querySelector(".menu-toggle");
 
-      menuButton.setAttribute(
-        "aria-label",
-        isOpen
-          ? "Close navigation menu"
-          : "Open navigation menu"
-      );
-
-    });
+  const navigation =
+    document.querySelector(".navigation");
 
 
-    document
-      .querySelectorAll(".navigation a")
-      .forEach(link => {
+  menuButton.addEventListener("click", () => {
 
-        link.addEventListener("click", () => {
+    navigation.classList.toggle("active");
 
-          navigation.classList.remove("active");
+    const isOpen =
+      navigation.classList.contains("active");
 
-          menuButton.setAttribute(
-            "aria-expanded",
-            "false"
-          );
+    menuButton.setAttribute(
+      "aria-expanded",
+      isOpen
+    );
 
-          menuButton.setAttribute(
-            "aria-label",
-            "Open navigation menu"
-          );
+    menuButton.setAttribute(
+      "aria-label",
+      isOpen
+        ? "Close navigation menu"
+        : "Open navigation menu"
+    );
 
-        });
+  });
+
+
+  document
+    .querySelectorAll(".navigation a")
+    .forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        navigation.classList.remove("active");
+
+        menuButton.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+        menuButton.setAttribute(
+          "aria-label",
+          "Open navigation menu"
+        );
 
       });
 
-  </script>
+    });
+
+</script>
+
 
 </body>
 </html>
