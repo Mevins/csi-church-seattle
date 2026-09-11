@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>CSI Church of Seattle | Church of South India</title>
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    CSI Church of Seattle | Church of South India
+  </title>
 
   <meta
     name="description"
-    content="CSI Church of Seattle - Church of South India. Join us for worship, prayer, Holy Communion and fellowship in Auburn, Washington."
+    content="CSI Church of Seattle - Church of South India. Join us for worship, prayer, Holy Communion and fellowship."
   >
 
-  <meta name="theme-color" content="#071827">
+  <meta
+    name="theme-color"
+    content="#071827"
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   >
+
 
   <style>
 
@@ -28,6 +45,7 @@
     ========================================= */
 
     :root {
+
       --navy: #10263f;
       --navy-dark: #071827;
       --navy-light: #183957;
@@ -45,6 +63,7 @@
 
       --serif: "Cormorant Garamond", Georgia, serif;
       --sans: "Inter", Arial, sans-serif;
+
     }
 
 
@@ -134,17 +153,6 @@
       margin-bottom: 18px;
     }
 
-    .section-heading {
-      max-width: 720px;
-      margin-bottom: 50px;
-    }
-
-    .centered {
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-
 
     /* =========================================
        HEADER
@@ -152,22 +160,24 @@
 
     .site-header {
       position: fixed;
+
       top: 0;
       left: 0;
+
       width: 100%;
 
       z-index: 1000;
 
       background: rgba(7, 24, 39, 0.97);
 
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom:
+        1px solid rgba(255,255,255,0.08);
 
       backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
     }
 
     .nav-container {
-      min-height: 82px;
+      height: 82px;
 
       display: flex;
       align-items: center;
@@ -182,6 +192,7 @@
     .logo {
       display: flex;
       align-items: center;
+
       gap: 12px;
 
       color: var(--white);
@@ -226,9 +237,15 @@
       text-transform: uppercase;
     }
 
+
+    /* =========================================
+       NAVIGATION
+    ========================================= */
+
     .navigation {
       display: flex;
       align-items: center;
+
       gap: 30px;
     }
 
@@ -305,8 +322,6 @@
       font-size: 420px;
 
       line-height: 1;
-
-      pointer-events: none;
     }
 
     .hero::after {
@@ -320,11 +335,10 @@
       right: -200px;
       bottom: -300px;
 
-      border: 1px solid rgba(201,165,90,0.18);
+      border:
+        1px solid rgba(201,165,90,0.18);
 
       border-radius: 50%;
-
-      pointer-events: none;
     }
 
     .hero-content {
@@ -335,26 +349,12 @@
       max-width: 850px;
     }
 
-    .hero-church-name {
-      display: block;
-
-      margin-bottom: 14px;
-
-      color: var(--gold-light);
-
-      font-family: var(--serif);
-
-      font-size: clamp(24px, 3vw, 34px);
-
-      line-height: 1.1;
-    }
-
     .hero h1 {
-      margin-bottom: 28px;
+      margin-bottom: 30px;
 
       color: white;
 
-      font-size: clamp(56px, 8vw, 96px);
+      font-size: clamp(58px, 8vw, 96px);
 
       line-height: 0.9;
     }
@@ -391,12 +391,7 @@
     ========================================= */
 
     .btn {
-      display: inline-flex;
-
-      align-items: center;
-      justify-content: center;
-
-      min-height: 46px;
+      display: inline-block;
 
       padding: 13px 25px;
 
@@ -410,8 +405,7 @@
       transition:
         transform 0.2s ease,
         background 0.2s ease,
-        color 0.2s ease,
-        border-color 0.2s ease;
+        color 0.2s ease;
     }
 
     .btn:hover {
@@ -429,7 +423,8 @@
     }
 
     .btn-outline {
-      border: 1px solid rgba(255,255,255,0.45);
+      border:
+        1px solid rgba(255,255,255,0.45);
 
       color: white;
     }
@@ -446,18 +441,12 @@
       color: var(--navy);
     }
 
-    .btn-light:hover {
-      background: var(--cream);
-    }
-
 
     /* =========================================
        NEXT SERVICE
     ========================================= */
 
     .next-service {
-      position: relative;
-
       padding: 42px 0;
 
       background: var(--gold);
@@ -470,11 +459,7 @@
 
       justify-content: space-between;
 
-      gap: 40px;
-    }
-
-    .next-service-content {
-      flex: 1;
+      gap: 35px;
     }
 
     .next-service .eyebrow {
@@ -484,58 +469,21 @@
     }
 
     .next-service h2 {
-      margin-bottom: 7px;
+      margin-bottom: 5px;
 
       color: var(--navy);
 
-      font-size: clamp(34px, 4vw, 50px);
+      font-size: clamp(32px, 4vw, 48px);
     }
 
     .next-service p {
-      margin-bottom: 5px;
+      margin: 0;
 
       color: #394454;
     }
 
-    .next-service .service-time {
-      font-size: 16px;
+    .service-time {
       font-weight: 700;
-      color: var(--navy);
-    }
-
-    .next-service .service-location {
-      margin-top: 8px;
-    }
-
-    .next-service-action {
-      flex-shrink: 0;
-    }
-
-
-    /* =========================================
-       ABOUT
-    ========================================= */
-
-    .about {
-      background: var(--cream);
-    }
-
-    .two-column {
-      display: grid;
-
-      grid-template-columns: 0.9fr 1.2fr;
-
-      gap: 90px;
-    }
-
-    .about-text {
-      font-size: 17px;
-    }
-
-    .about-text p:last-child {
-      color: var(--navy);
-
-      font-weight: 600;
     }
 
 
@@ -543,10 +491,16 @@
        WORSHIP
     ========================================= */
 
+    .section-heading {
+      max-width: 720px;
+
+      margin-bottom: 50px;
+    }
+
     .service-card {
       display: flex;
 
-      align-items: flex-start;
+      align-items: center;
 
       gap: 28px;
 
@@ -594,49 +548,72 @@
       letter-spacing: 2px;
     }
 
-    .service-card h3 {
+    .service-card h3,
+    .pastor-card h3 {
       color: var(--navy);
 
       font-size: 31px;
-
-      margin-bottom: 10px;
     }
 
     .service-card p {
-      margin: 5px 0 0;
+      margin: 8px 0 0;
     }
 
 
     /* =========================================
-       GUEST VICARS
+       VICARS
     ========================================= */
+
+    .vicars-section {
+      background: var(--cream);
+    }
 
     .vicar-grid {
       display: grid;
 
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns:
+        repeat(2, 1fr);
 
-      gap: 18px;
-
-      margin-top: 18px;
+      gap: 20px;
     }
 
     .vicar-card {
-      padding: 30px 35px;
-
-      border: 1px solid var(--border);
+      padding: 32px;
 
       background: white;
+
+      border-top:
+        4px solid var(--navy);
+    }
+
+    .vicar-card:first-child {
+      border-top-color: var(--gold);
     }
 
     .vicar-card h3 {
       color: var(--navy);
 
-      font-size: 29px;
+      font-size: 30px;
 
-      line-height: 1.1;
+      line-height: 1.15;
 
       margin-bottom: 8px;
+    }
+
+    .vicar-role {
+      display: block;
+
+      margin-bottom: 10px;
+
+      color: var(--gold-dark);
+
+      font-size: 10px;
+
+      font-weight: 700;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.5px;
     }
 
     .vicar-card p {
@@ -647,62 +624,69 @@
 
 
     /* =========================================
-       UPCOMING SERVICES
+       EVENTS
     ========================================= */
 
-    .services {
-      background: var(--cream);
+    .events {
+      background: white;
     }
 
-    .services-list {
+    .centered {
+      margin-left: auto;
+      margin-right: auto;
+
+      text-align: center;
+    }
+
+    .event-grid {
       display: grid;
 
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns:
+        repeat(2, 1fr);
 
       gap: 20px;
     }
 
-    .service-event {
+    .event-card {
       display: flex;
 
       gap: 22px;
 
-      min-height: 210px;
+      min-height: 220px;
 
       padding: 28px;
 
-      background: white;
+      background: var(--cream);
 
-      border-top: 4px solid var(--navy);
+      border-top:
+        4px solid var(--navy);
 
       transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
     }
 
-    .service-event:hover {
-      transform: translateY(-4px);
+    .event-card:hover {
+      transform: translateY(-5px);
 
       box-shadow:
-        0 15px 35px rgba(16,38,63,0.09);
+        0 15px 35px
+        rgba(16,38,63,0.09);
     }
 
-    .service-event.featured {
+    .event-card.featured {
       border-top-color: var(--gold);
-
-      box-shadow:
-        0 10px 30px rgba(16,38,63,0.06);
     }
 
-    .service-date {
-      min-width: 68px;
+    .event-date {
+      min-width: 65px;
 
       text-align: center;
 
       color: var(--navy);
     }
 
-    .service-date span {
+    .event-date span {
       display: block;
 
       color: var(--gold-dark);
@@ -713,7 +697,7 @@
       letter-spacing: 2px;
     }
 
-    .service-date strong {
+    .event-date strong {
       display: block;
 
       font-family: var(--serif);
@@ -723,10 +707,10 @@
       line-height: 0.9;
     }
 
-    .service-date small {
+    .event-date small {
       display: block;
 
-      margin-top: 6px;
+      margin-top: 5px;
 
       color: var(--muted);
 
@@ -735,7 +719,7 @@
       text-transform: uppercase;
     }
 
-    .service-event-label {
+    .event-type {
       display: block;
 
       margin-bottom: 8px;
@@ -750,113 +734,99 @@
       letter-spacing: 1.5px;
     }
 
-    .service-event h3 {
-      margin-bottom: 12px;
+    .event-info h3 {
+      margin-bottom: 13px;
 
       color: var(--navy);
 
-      font-size: 27px;
+      font-size: 26px;
 
       line-height: 1.15;
     }
 
-    .service-event p {
-      margin-bottom: 7px;
-
+    .event-info p {
       font-size: 13px;
-    }
 
-    .service-event .special-guest {
-      color: var(--navy);
-
-      font-weight: 600;
+      margin-bottom: 5px;
     }
 
 
     /* =========================================
-       PLAN YOUR VISIT
+       LOCATION
     ========================================= */
 
-    .visit {
-      background: white;
+    .location {
+      background: var(--cream);
     }
 
-    .visit-box {
+    .location-content {
       display: grid;
 
-      grid-template-columns: 0.85fr 1.15fr;
+      grid-template-columns:
+        1.2fr 0.8fr;
 
-      gap: 0;
+      gap: 60px;
 
-      overflow: hidden;
-
-      background: var(--navy);
-
-      box-shadow:
-        0 20px 50px rgba(16,38,63,0.10);
+      align-items: center;
     }
 
-    .visit-info {
-      padding: 50px;
-
-      color: white;
+    .location-info h2 {
+      font-size: 58px;
     }
 
-    .visit-info h2 {
-      color: white;
-
-      font-size: clamp(42px, 5vw, 58px);
+    .location-info > p {
+      max-width: 600px;
     }
 
-    .visit-info > p {
-      color: #cbd5de;
-    }
-
-    .visit-address {
+    .address {
       margin: 30px 0;
 
       padding-left: 20px;
 
-      border-left: 3px solid var(--gold);
+      border-left:
+        3px solid var(--gold);
     }
 
-    .visit-address strong {
+    .address strong {
       display: block;
 
-      margin-bottom: 6px;
+      margin-bottom: 5px;
+
+      color: var(--navy);
+
+      font-size: 19px;
+    }
+
+    .address span {
+      color: var(--muted);
+    }
+
+    .location-card {
+      padding: 40px;
+
+      background: var(--navy);
 
       color: white;
-
-      font-size: 17px;
     }
 
-    .visit-address span {
+    .location-card .map-icon {
+      font-size: 40px;
+
+      margin-bottom: 15px;
+    }
+
+    .location-card h3 {
+      color: white;
+
+      font-size: 34px;
+
+      margin-bottom: 12px;
+    }
+
+    .location-card p {
       color: #cbd5de;
-    }
 
-    .visit-buttons {
-      display: flex;
-
-      flex-wrap: wrap;
-
-      gap: 12px;
-    }
-
-    .map-container {
-      min-height: 430px;
-
-      background: #e9e5da;
-    }
-
-    .map-container iframe {
-      width: 100%;
-      height: 100%;
-
-      min-height: 430px;
-
-      display: block;
-
-      border: 0;
+      font-size: 14px;
     }
 
 
@@ -864,14 +834,11 @@
        CONTACT
     ========================================= */
 
-    .contact-intro {
-      max-width: 620px;
-    }
-
     .contact-details {
       display: grid;
 
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns:
+        repeat(2, 1fr);
 
       gap: 18px;
     }
@@ -883,20 +850,10 @@
 
       padding: 30px;
 
-      border: 1px solid var(--border);
+      border:
+        1px solid var(--border);
 
       background: white;
-
-      transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-    }
-
-    .contact-item:hover {
-      transform: translateY(-3px);
-
-      box-shadow:
-        0 10px 25px rgba(16,38,63,0.07);
     }
 
     .contact-item > span {
@@ -916,47 +873,27 @@
       margin-bottom: 7px;
 
       color: var(--navy);
-
-      line-height: 1.3;
     }
 
     .contact-item a {
-      display: inline-block;
-
       margin-top: 4px;
 
       color: var(--muted);
-
-      transition: color 0.2s ease;
     }
 
     .contact-item a:hover {
       color: var(--gold-dark);
     }
 
-    .phone-link {
-      font-size: 17px;
-
-      font-weight: 600;
-    }
-
-    .contact-divider {
-      height: 1px;
-
-      margin: 16px 0;
-
-      background: var(--border);
-    }
-
 
     /* =========================================
-       EXTERNAL / NORCAL
+       EXTERNAL
     ========================================= */
 
     .external {
       padding: 90px 0;
 
-      background: var(--cream);
+      background: var(--navy);
 
       text-align: center;
     }
@@ -968,10 +905,14 @@
     }
 
     .external-content h2 {
+      color: white;
+
       margin-bottom: 18px;
     }
 
     .external-content p {
+      color: #cbd5de;
+
       margin-bottom: 28px;
     }
 
@@ -1010,18 +951,8 @@
       font-size: 13px;
     }
 
-    .footer-address {
-      margin-top: 16px;
-
-      color: #8997a5;
-
-      font-size: 13px;
-    }
-
     .footer-links {
       display: flex;
-
-      flex-wrap: wrap;
 
       gap: 25px;
 
@@ -1041,7 +972,8 @@
     .copyright {
       padding: 20px 0;
 
-      border-top: 1px solid rgba(255,255,255,0.08);
+      border-top:
+        1px solid rgba(255,255,255,0.08);
 
       color: #647382;
 
@@ -1052,7 +984,7 @@
 
 
     /* =========================================
-       TABLET
+       MOBILE
     ========================================= */
 
     @media (max-width: 850px) {
@@ -1077,48 +1009,27 @@
 
         background: var(--navy-dark);
 
-        border-top: 1px solid rgba(255,255,255,0.08);
-
-        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        border-top:
+          1px solid rgba(255,255,255,0.08);
       }
 
       .navigation.active {
         display: flex;
       }
 
-      .navigation a {
-        width: 100%;
-
-        padding: 5px 0;
-
-        font-size: 14px;
-      }
-
       .menu-toggle {
         display: block;
       }
 
-      .two-column {
-        grid-template-columns: 1fr;
-
-        gap: 35px;
-      }
-
-      .services-list {
+      .vicar-grid,
+      .event-grid {
         grid-template-columns: 1fr;
       }
 
-      .vicar-grid {
+      .location-content {
         grid-template-columns: 1fr;
-      }
 
-      .visit-box {
-        grid-template-columns: 1fr;
-      }
-
-      .map-container,
-      .map-container iframe {
-        min-height: 360px;
+        gap: 30px;
       }
 
       .contact-details {
@@ -1131,14 +1042,6 @@
         align-items: flex-start;
       }
 
-      .next-service-action {
-        width: 100%;
-      }
-
-      .next-service-action .btn {
-        width: 100%;
-      }
-
       .footer-content {
         flex-direction: column;
       }
@@ -1147,29 +1050,17 @@
 
 
     /* =========================================
-       MOBILE
+       SMALL PHONES
     ========================================= */
 
     @media (max-width: 550px) {
 
-      html {
-        scroll-padding-top: 75px;
-      }
-
-      .container {
-        width: min(92%, 1120px);
-      }
-
       .nav-container {
-        min-height: 72px;
+        height: 72px;
       }
 
       .navigation {
         top: 72px;
-      }
-
-      .logo {
-        gap: 9px;
       }
 
       .logo-text strong {
@@ -1177,9 +1068,7 @@
       }
 
       .logo-text small {
-        font-size: 7px;
-
-        letter-spacing: 1.5px;
+        font-size: 8px;
       }
 
       .logo-image {
@@ -1188,43 +1077,17 @@
       }
 
       .hero {
-        min-height: 670px;
+        min-height: 650px;
 
         padding-top: 72px;
       }
 
-      .hero-content {
-        padding: 45px 0;
-      }
-
-      .hero-church-name {
-        font-size: 23px;
-      }
-
       .hero h1 {
-        font-size: 54px;
-
-        line-height: 0.92;
-
-        margin-bottom: 25px;
+        font-size: 55px;
       }
 
       .hero-description {
         font-size: 15px;
-
-        line-height: 1.7;
-
-        margin-bottom: 28px;
-      }
-
-      .hero-buttons {
-        flex-direction: column;
-
-        align-items: stretch;
-      }
-
-      .hero-buttons .btn {
-        width: 100%;
       }
 
       .section {
@@ -1232,23 +1095,11 @@
       }
 
       h2 {
-        font-size: 45px;
-      }
-
-      .next-service {
-        padding: 34px 0;
-      }
-
-      .next-service h2 {
-        font-size: 36px;
-      }
-
-      .next-service .service-time {
-        font-size: 15px;
+        font-size: 46px;
       }
 
       .service-card {
-        flex-direction: column;
+        align-items: flex-start;
 
         padding: 25px;
 
@@ -1256,14 +1107,14 @@
       }
 
       .service-icon {
-        width: 52px;
-        height: 52px;
+        width: 50px;
+        height: 50px;
 
         font-size: 24px;
       }
 
       .service-card h3 {
-        font-size: 27px;
+        font-size: 26px;
       }
 
       .vicar-card {
@@ -1274,62 +1125,28 @@
         font-size: 26px;
       }
 
-      .service-event {
+      .event-card {
         min-height: auto;
 
         padding: 24px;
-
-        gap: 17px;
       }
 
-      .service-date {
-        min-width: 58px;
+      .location-info h2 {
+        font-size: 45px;
       }
 
-      .service-date strong {
-        font-size: 43px;
-      }
-
-      .service-event h3 {
-        font-size: 24px;
-      }
-
-      .visit-info {
-        padding: 32px 25px;
-      }
-
-      .visit-info h2 {
-        font-size: 43px;
-      }
-
-      .map-container,
-      .map-container iframe {
-        min-height: 300px;
-      }
-
-      .contact-details {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-item {
-        padding: 25px;
-      }
-
-      .external {
-        padding: 70px 0;
-      }
-
-      .footer-content {
-        padding: 45px 0;
+      .location-card {
+        padding: 30px;
       }
 
       .footer-links {
-        gap: 16px;
+        flex-wrap: wrap;
       }
 
     }
 
   </style>
+
 </head>
 
 
@@ -1344,7 +1161,11 @@
 
   <div class="container nav-container">
 
-    <a href="#home" class="logo">
+    <a
+      href="#home"
+      class="logo"
+      aria-label="CSI Church of Seattle home"
+    >
 
       <img
         src="logo.png"
@@ -1371,35 +1192,35 @@
       class="menu-toggle"
       aria-label="Open navigation menu"
       aria-expanded="false"
-      aria-controls="main-navigation"
+      type="button"
     >
       ☰
     </button>
 
 
     <nav
-      id="main-navigation"
       class="navigation"
+      aria-label="Main navigation"
     >
 
       <a href="#home">
         Home
       </a>
 
-      <a href="#about">
-        About
-      </a>
-
       <a href="#worship">
         Worship
       </a>
 
-      <a href="#services">
+      <a href="#events">
         Services
       </a>
 
-      <a href="#visit">
-        Visit Us
+      <a href="#vicars">
+        Guest Vicars
+      </a>
+
+      <a href="#location">
+        Location
       </a>
 
       <a href="#contact">
@@ -1421,43 +1242,43 @@
      HERO
 ========================================= -->
 
-<section id="home" class="hero">
+<section
+  id="home"
+  class="hero"
+>
 
   <div class="container hero-content">
 
     <p class="eyebrow">
-      Church of South India · Seattle
+      Church of South India
     </p>
-
-    <span class="hero-church-name">
-      CSI Church of Seattle
-    </span>
 
     <h1>
       Celebrating Our Roots,
-      <span>Cultivating Our Christian Faith</span>
+      <span>
+        Cultivating Our Christian Faith
+      </span>
     </h1>
 
     <p class="hero-description">
-      Join us for worship, Holy Communion, prayer,
-      and Christian fellowship as we grow together
-      in faith and community.
+      Join us in worship, prayer, Holy Communion,
+      and fellowship as we grow together in faith.
     </p>
 
     <div class="hero-buttons">
 
       <a
-        href="#services"
+        href="#worship"
         class="btn btn-primary"
       >
-        View Upcoming Services
+        Worship With Us
       </a>
 
       <a
-        href="#visit"
+        href="#events"
         class="btn btn-outline"
       >
-        Plan Your Visit
+        Upcoming Services
       </a>
 
     </div>
@@ -1470,97 +1291,49 @@
 
 <!-- =========================================
      NEXT SERVICE
+     
+     THIS CONTENT IS AUTOMATICALLY
+     GENERATED BY JAVASCRIPT BELOW.
 ========================================= -->
 
 <section class="next-service">
 
   <div class="container next-service-inner">
 
-    <div class="next-service-content">
+    <div>
 
       <p class="eyebrow">
         Next Service
       </p>
 
-      <h2>
-        Holy Communion Service
+      <h2 id="nextServiceTitle">
+        Loading...
       </h2>
 
-      <p class="service-time">
-        Saturday, September 12 · 10:30 AM
-      </p>
-
       <p>
-        Most Rev. Dr. Foley Beach, Anglican Archbishop
+        <span
+          class="service-time"
+          id="nextServiceDate"
+        >
+          Loading...
+        </span>
       </p>
 
-      <p class="service-location">
+      <p id="nextServiceLocation">
         📍 610 8th Street NE, Auburn, WA 98092
       </p>
 
     </div>
 
 
-    <div class="next-service-action">
-
-      <a
-        href="https://www.google.com/maps/search/?api=1&query=610+8th+Street+NE%2C+Auburn%2C+WA+98092"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-light"
-      >
-        Get Directions
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================
-     ABOUT
-========================================= -->
-
-<section id="about" class="section about">
-
-  <div class="container two-column">
-
-    <div>
-
-      <p class="eyebrow dark">
-        Welcome
-      </p>
-
-      <h2>
-        Growing together in Christ
-      </h2>
-
-    </div>
-
-
-    <div class="about-text">
-
-      <p>
-        CSI Church of Seattle is a congregation
-        of the Church of South India (CSI).
-      </p>
-
-      <p>
-        We gather together for worship, prayer,
-        Holy Communion, and Christian fellowship.
-        Our services provide an opportunity for
-        families and individuals to come together,
-        encourage one another, and celebrate our faith.
-      </p>
-
-      <p>
-        Everyone is warmly invited to join us.
-      </p>
-
-    </div>
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=610+8th+Street+NE%2C+Auburn%2C+WA+98092"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-light"
+    >
+      Get Directions
+    </a>
 
   </div>
 
@@ -1572,7 +1345,10 @@
      WORSHIP
 ========================================= -->
 
-<section id="worship" class="section">
+<section
+  id="worship"
+  class="section"
+>
 
   <div class="container">
 
@@ -1587,14 +1363,15 @@
       </h2>
 
       <p>
-        CSI Church of Seattle holds Church of South
-        India (CSI) services on Saturdays throughout
-        the year.
+        CSI Church of Seattle holds a Church of
+        South India (CSI) service once a month,
+        usually on a Saturday at 11:00 AM.
       </p>
 
       <p>
-        Please check our upcoming service schedule
-        for the latest dates and times.
+        Special services may have different times.
+        Please check the upcoming service schedule
+        below for the latest information.
       </p>
 
     </div>
@@ -1609,45 +1386,66 @@
       <div>
 
         <span class="card-label">
-          Monthly CSI Worship
+          Monthly CSI Service
         </span>
 
         <h3>
-          Worship, Holy Communion &amp; Fellowship
+          Saturday · 11:00 AM
         </h3>
 
         <p>
-          We come together as a community to worship
-          Christ, celebrate Holy Communion, pray,
-          and encourage one another in faith.
+          Service dates and any special service
+          times will be announced in advance.
+          Please check this website regularly
+          for updates.
         </p>
 
       </div>
 
     </div>
 
+  </div>
 
-    <!-- GUEST VICARS -->
+</section>
 
-    <div class="section-heading" style="margin-top: 65px; margin-bottom: 25px;">
+
+
+<!-- =========================================
+     GUEST VICARS
+========================================= -->
+
+<section
+  id="vicars"
+  class="section vicars-section"
+>
+
+  <div class="container">
+
+    <div class="section-heading">
 
       <p class="eyebrow dark">
         Guest Vicars
       </p>
 
       <h2>
-        Our visiting ministers
+        Those serving with us
       </h2>
+
+      <p>
+        We are grateful for the clergy who serve
+        and worship with our congregation.
+      </p>
 
     </div>
 
 
     <div class="vicar-grid">
 
-      <div class="vicar-card">
 
-        <span class="card-label">
-          Guest Vicar
+      <article class="vicar-card">
+
+        <span class="vicar-role">
+          Anglican Diocese of the South
         </span>
 
         <h3>
@@ -1658,13 +1456,13 @@
           Anglican Diocese of the South
         </p>
 
-      </div>
+      </article>
 
 
-      <div class="vicar-card">
+      <article class="vicar-card">
 
-        <span class="card-label">
-          Guest Vicar
+        <span class="vicar-role">
+          CSI Church, SFO
         </span>
 
         <h3>
@@ -1675,7 +1473,8 @@
           CSI Church, SFO
         </p>
 
-      </div>
+      </article>
+
 
     </div>
 
@@ -1686,10 +1485,16 @@
 
 
 <!-- =========================================
-     UPCOMING SERVICES
+     SERVICES / EVENTS
+     
+     SERVICE CARDS ARE GENERATED
+     AUTOMATICALLY FROM JAVASCRIPT.
 ========================================= -->
 
-<section id="services" class="section services">
+<section
+  id="events"
+  class="section events"
+>
 
   <div class="container">
 
@@ -1700,199 +1505,23 @@
       </p>
 
       <h2>
-        Upcoming Services
+        Upcoming services
       </h2>
 
       <p>
-        Please save these dates and plan to join us
-        for worship, Holy Communion, and fellowship.
+        Please save these dates and plan to
+        join us for worship and fellowship.
       </p>
 
     </div>
 
 
-    <div class="services-list">
-
-
-      <!-- SEPTEMBER 12 -->
-
-      <article class="service-event featured">
-
-        <div class="service-date">
-
-          <span>
-            SEP
-          </span>
-
-          <strong>
-            12
-          </strong>
-
-          <small>
-            Saturday
-          </small>
-
-        </div>
-
-
-        <div>
-
-          <span class="service-event-label">
-            Next Service
-          </span>
-
-          <h3>
-            Holy Communion Service
-          </h3>
-
-          <p>
-            Saturday · 10:30 AM
-          </p>
-
-          <p class="special-guest">
-            Most Rev. Dr. Foley Beach,
-            Anglican Archbishop
-          </p>
-
-        </div>
-
-      </article>
-
-
-
-      <!-- OCTOBER 10 -->
-
-      <article class="service-event">
-
-        <div class="service-date">
-
-          <span>
-            OCT
-          </span>
-
-          <strong>
-            10
-          </strong>
-
-          <small>
-            Saturday
-          </small>
-
-        </div>
-
-
-        <div>
-
-          <span class="service-event-label">
-            CSI Service
-          </span>
-
-          <h3>
-            Holy Communion Service
-          </h3>
-
-          <p>
-            Saturday
-          </p>
-
-          <p>
-            Time to be announced
-          </p>
-
-        </div>
-
-      </article>
-
-
-
-      <!-- NOVEMBER 14 -->
-
-      <article class="service-event">
-
-        <div class="service-date">
-
-          <span>
-            NOV
-          </span>
-
-          <strong>
-            14
-          </strong>
-
-          <small>
-            Saturday
-          </small>
-
-        </div>
-
-
-        <div>
-
-          <span class="service-event-label">
-            CSI Service
-          </span>
-
-          <h3>
-            Holy Communion Service
-          </h3>
-
-          <p>
-            Saturday
-          </p>
-
-          <p>
-            Time to be announced
-          </p>
-
-        </div>
-
-      </article>
-
-
-
-      <!-- DECEMBER 5 -->
-
-      <article class="service-event">
-
-        <div class="service-date">
-
-          <span>
-            DEC
-          </span>
-
-          <strong>
-            5
-          </strong>
-
-          <small>
-            Saturday
-          </small>
-
-        </div>
-
-
-        <div>
-
-          <span class="service-event-label">
-            CSI Service
-          </span>
-
-          <h3>
-            Holy Communion Service
-          </h3>
-
-          <p>
-            Saturday
-          </p>
-
-          <p>
-            Time to be announced
-          </p>
-
-        </div>
-
-      </article>
-
+    <div
+      id="eventGrid"
+      class="event-grid"
+    >
+
+      <!-- JavaScript inserts events here -->
 
     </div>
 
@@ -1903,86 +1532,86 @@
 
 
 <!-- =========================================
-     PLAN YOUR VISIT
+     LOCATION
 ========================================= -->
 
-<section id="visit" class="section visit">
+<section
+  id="location"
+  class="section location"
+>
 
-  <div class="container">
-
-    <div class="visit-box">
-
-
-      <div class="visit-info">
-
-        <p class="eyebrow">
-          Plan Your Visit
-        </p>
-
-        <h2>
-          Join us in person.
-        </h2>
-
-        <p>
-          We would love to welcome you to our
-          next worship service.
-        </p>
+  <div class="container location-content">
 
 
-        <div class="visit-address">
+    <div class="location-info">
 
-          <strong>
-            CSI Church of Seattle
-          </strong>
+      <p class="eyebrow dark">
+        Where We Meet
+      </p>
 
-          <span>
-            610 8th Street NE<br>
-            Auburn, WA 98092
-          </span>
+      <h2>
+        Join us in person.
+      </h2>
 
-        </div>
+      <p>
+        We would love to welcome you to our
+        next worship service.
+      </p>
 
 
-        <div class="visit-buttons">
+      <div class="address">
 
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=610+8th+Street+NE%2C+Auburn%2C+WA+98092"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary"
-          >
-            Get Directions
-          </a>
+        <strong>
+          CSI Church of Seattle
+        </strong>
 
-          <a
-            href="tel:+12068327904"
-            class="btn btn-outline"
-          >
-            Call Us
-          </a>
-
-        </div>
+        <span>
+          610 8th Street NE<br>
+          Auburn, WA 98092
+        </span>
 
       </div>
 
 
-
-      <!-- REAL GOOGLE MAP -->
-
-      <div class="map-container">
-
-        <iframe
-          src="https://www.google.com/maps?q=610+8th+Street+NE%2C+Auburn%2C+WA+98092&output=embed"
-          title="Map showing CSI Church of Seattle in Auburn, Washington"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-
-      </div>
-
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=610+8th+Street+NE%2C+Auburn%2C+WA+98092"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+      >
+        Get Directions
+      </a>
 
     </div>
+
+
+
+    <div class="location-card">
+
+      <div class="map-icon">
+        📍
+      </div>
+
+      <h3>
+        Auburn, Washington
+      </h3>
+
+      <p>
+        610 8th Street NE<br>
+        Auburn, WA 98092
+      </p>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=610+8th+Street+NE%2C+Auburn%2C+WA+98092"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-light"
+      >
+        Open in Google Maps
+      </a>
+
+    </div>
+
 
   </div>
 
@@ -1994,147 +1623,85 @@
      CONTACT
 ========================================= -->
 
-<section id="contact" class="section">
+<section
+  id="contact"
+  class="section"
+>
 
-  <div class="container">
+  <div class="container two-column">
 
-    <div class="two-column">
+    <div>
 
-      <div class="contact-intro">
+      <p class="eyebrow dark">
+        Contact
+      </p>
 
-        <p class="eyebrow dark">
-          Contact
-        </p>
+      <h2>
+        We'd love to hear from you.
+      </h2>
 
-        <h2>
-          We'd love to hear from you.
-        </h2>
+      <p>
+        For questions about services, events,
+        or the CSI Church of Seattle, please
+        reach out to us.
+      </p>
 
-        <p>
-          Have a question about an upcoming service,
-          worship, or the CSI Church of Seattle?
-          Please feel free to reach out.
-        </p>
+    </div>
 
-        <p>
-          We look forward to welcoming you into
-          our church community.
-        </p>
+
+    <div class="contact-details">
+
+
+      <div class="contact-item">
+
+        <span>
+          Guest Vicar
+        </span>
+
+        <strong>
+          Canon Rev. Sean George
+        </strong>
+
+        <span>
+          Anglican Diocese of the South
+        </span>
+
+      </div>
+
+
+      <div class="contact-item">
+
+        <span>
+          Guest Vicar
+        </span>
+
+        <strong>
+          Rev. Jerrin Thomas
+        </strong>
+
+        <span>
+          CSI Church, SFO
+        </span>
 
       </div>
 
 
-      <div class="contact-details">
+      <div class="contact-item">
 
+        <span>
+          Church Contacts
+        </span>
 
-        <!-- GUEST VICARS -->
+        <a href="tel:+12068327904">
+          206-832-7904
+        </a>
 
-        <div class="contact-item">
-
-          <span>
-            Guest Vicars
-          </span>
-
-          <strong>
-            Canon Rev. Sean George
-          </strong>
-
-          <a href="#">
-            Anglican Diocese of the South
-          </a>
-
-          <div class="contact-divider"></div>
-
-          <strong>
-            Rev. Jerrin Thomas
-          </strong>
-
-          <a href="#">
-            CSI Church, SFO
-          </a>
-
-        </div>
-
-
-        <!-- CHURCH CONTACTS -->
-
-        <div class="contact-item">
-
-          <span>
-            Church Contacts
-          </span>
-
-          <a
-            href="tel:+12068327904"
-            class="phone-link"
-          >
-            206-832-7904
-          </a>
-
-          <a
-            href="tel:+12065510142"
-            class="phone-link"
-          >
-            206-551-0142
-          </a>
-
-        </div>
-
-
-        <!-- ADDRESS -->
-
-        <div class="contact-item">
-
-          <span>
-            Church Address
-          </span>
-
-          <strong>
-            CSI Church of Seattle
-          </strong>
-
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=610+8th+Street+NE%2C+Auburn%2C+WA+98092"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            610 8th Street NE<br>
-            Auburn, WA 98092
-          </a>
-
-        </div>
-
-
-        <!-- DIRECTIONS -->
-
-        <div class="contact-item">
-
-          <span>
-            Plan Your Visit
-          </span>
-
-          <strong>
-            Find us in Auburn
-          </strong>
-
-          <p>
-            Get directions to our worship location
-            and plan your visit.
-          </p>
-
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=610+8th+Street+NE%2C+Auburn%2C+WA+98092"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary"
-          >
-            Open Google Maps
-          </a>
-
-        </div>
-
+        <a href="tel:+12065510142">
+          206-551-0142
+        </a>
 
       </div>
+
 
     </div>
 
@@ -2145,14 +1712,14 @@
 
 
 <!-- =========================================
-     NORCAL
+     CSI NORCAL
 ========================================= -->
 
 <section class="external">
 
   <div class="container external-content">
 
-    <p class="eyebrow dark">
+    <p class="eyebrow">
       Additional Information
     </p>
 
@@ -2224,30 +1791,25 @@
         worship, prayer, and fellowship.
       </p>
 
-      <p class="footer-address">
-        610 8th Street NE<br>
-        Auburn, WA 98092
-      </p>
-
     </div>
 
 
     <div class="footer-links">
 
-      <a href="#about">
-        About
-      </a>
-
       <a href="#worship">
         Worship
       </a>
 
-      <a href="#services">
+      <a href="#events">
         Services
       </a>
 
-      <a href="#visit">
-        Visit Us
+      <a href="#vicars">
+        Guest Vicars
+      </a>
+
+      <a href="#location">
+        Location
       </a>
 
       <a href="#contact">
@@ -2271,64 +1833,506 @@
 
 
 <!-- =========================================
-     MOBILE MENU JAVASCRIPT
+     AUTOMATIC SERVICE SCHEDULE
 ========================================= -->
 
 <script>
 
+  /*
+   * =====================================================
+   * SERVICE SCHEDULE
+   *
+   * THIS IS THE ONLY PLACE YOU NEED TO EDIT
+   * WHEN ADDING OR CHANGING SERVICES.
+   *
+   * The website automatically:
+   *
+   * 1. Finds the next upcoming service.
+   * 2. Displays it in the gold "Next Service" banner.
+   * 3. Displays upcoming services in the Events section.
+   * 4. Highlights the next upcoming service.
+   *
+   * Default service time:
+   * 11:00 AM
+   *
+   * Special services can have their own time.
+   * =====================================================
+   */
+
+  const services = [
+
+    {
+      date: "2026-09-12",
+      time: "10:30 AM",
+      title: "Holy Communion Service",
+      type: "Special Service",
+      pastor: "Most Rev. Dr. Foley Beach, Anglican Archbishop"
+    },
+
+    {
+      date: "2026-10-10",
+      time: "11:00 AM",
+      title: "Holy Communion Service",
+      type: "Holy Communion"
+    },
+
+    {
+      date: "2026-11-14",
+      time: "11:00 AM",
+      title: "Holy Communion Service",
+      type: "Holy Communion"
+    },
+
+    {
+      date: "2026-12-05",
+      time: "11:00 AM",
+      title: "Holy Communion Service",
+      type: "Holy Communion"
+    }
+
+  ];
+
+
+  /*
+   * =====================================================
+   * LOCATION
+   * =====================================================
+   */
+
+  const churchAddress =
+    "610 8th Street NE, Auburn, WA 98092";
+
+
+  /*
+   * =====================================================
+   * HELPER: CREATE DATE
+   * =====================================================
+   *
+   * The date is interpreted as a local calendar date.
+   */
+
+  function createLocalDate(dateString) {
+
+    const parts =
+      dateString.split("-").map(Number);
+
+    return new Date(
+      parts[0],
+      parts[1] - 1,
+      parts[2],
+      23,
+      59,
+      59
+    );
+
+  }
+
+
+  /*
+   * =====================================================
+   * HELPER: FORMAT DATE
+   * =====================================================
+   */
+
+  function formatServiceDate(dateString) {
+
+    const date =
+      createLocalDate(dateString);
+
+    return date.toLocaleDateString(
+      "en-US",
+      {
+        weekday: "long",
+        month: "long",
+        day: "numeric"
+      }
+    );
+
+  }
+
+
+  /*
+   * =====================================================
+   * HELPER: FORMAT SHORT DATE
+   * =====================================================
+   */
+
+  function getMonth(dateString) {
+
+    const date =
+      createLocalDate(dateString);
+
+    return date.toLocaleDateString(
+      "en-US",
+      {
+        month: "short"
+      }
+    ).toUpperCase();
+
+  }
+
+
+  function getDay(dateString) {
+
+    const date =
+      createLocalDate(dateString);
+
+    return date.getDate();
+
+  }
+
+
+  function getWeekday(dateString) {
+
+    const date =
+      createLocalDate(dateString);
+
+    return date.toLocaleDateString(
+      "en-US",
+      {
+        weekday: "long"
+      }
+    );
+
+  }
+
+
+  /*
+   * =====================================================
+   * FIND NEXT SERVICE
+   * =====================================================
+   */
+
+  function getNextService() {
+
+    const now = new Date();
+
+    return services
+      .map(service => ({
+        ...service,
+        dateObject:
+          createLocalDate(service.date)
+      }))
+      .filter(service =>
+        service.dateObject >= now
+      )
+      .sort(
+        (a, b) =>
+          a.dateObject - b.dateObject
+      )[0];
+
+  }
+
+
+  /*
+   * =====================================================
+   * DISPLAY NEXT SERVICE
+   * =====================================================
+   */
+
+  function displayNextService() {
+
+    const nextService =
+      getNextService();
+
+    const titleElement =
+      document.getElementById(
+        "nextServiceTitle"
+      );
+
+    const dateElement =
+      document.getElementById(
+        "nextServiceDate"
+      );
+
+    const locationElement =
+      document.getElementById(
+        "nextServiceLocation"
+      );
+
+
+    if (!nextService) {
+
+      titleElement.textContent =
+        "Upcoming Service Dates";
+
+      dateElement.textContent =
+        "New dates will be announced soon.";
+
+      locationElement.textContent =
+        "📍 " + churchAddress;
+
+      return;
+
+    }
+
+
+    titleElement.textContent =
+      nextService.title;
+
+    dateElement.textContent =
+      `${formatServiceDate(nextService.date)} · ${nextService.time}`;
+
+    locationElement.textContent =
+      "📍 " + churchAddress;
+
+  }
+
+
+  /*
+   * =====================================================
+   * DISPLAY EVENTS
+   * =====================================================
+   */
+
+  function displayEvents() {
+
+    const eventGrid =
+      document.getElementById(
+        "eventGrid"
+      );
+
+    const today =
+      new Date();
+
+
+    const upcomingServices =
+      services
+        .map(service => ({
+          ...service,
+          dateObject:
+            createLocalDate(service.date)
+        }))
+        .filter(service =>
+          service.dateObject >= today
+        )
+        .sort(
+          (a, b) =>
+            a.dateObject - b.dateObject
+        );
+
+
+    const nextService =
+      getNextService();
+
+
+    if (!upcomingServices.length) {
+
+      eventGrid.innerHTML = `
+
+        <article class="event-card">
+
+          <div class="event-info">
+
+            <span class="event-type">
+              Upcoming
+            </span>
+
+            <h3>
+              New service dates will be announced soon.
+            </h3>
+
+            <p>
+              Please check back for updates.
+            </p>
+
+          </div>
+
+        </article>
+
+      `;
+
+      return;
+
+    }
+
+
+    eventGrid.innerHTML =
+      upcomingServices
+        .map(service => {
+
+          const isNext =
+            nextService &&
+            service.date ===
+            nextService.date;
+
+
+          return `
+
+            <article
+              class="event-card
+              ${isNext ? "featured" : ""}"
+            >
+
+              <div class="event-date">
+
+                <span>
+                  ${getMonth(service.date)}
+                </span>
+
+                <strong>
+                  ${getDay(service.date)}
+                </strong>
+
+                <small>
+                  ${getWeekday(service.date)}
+                </small>
+
+              </div>
+
+
+              <div class="event-info">
+
+                <span class="event-type">
+
+                  ${
+                    isNext
+                      ? "Next Service"
+                      : service.type
+                  }
+
+                </span>
+
+
+                <h3>
+                  ${service.title}
+                </h3>
+
+
+                <p>
+                  ${getWeekday(service.date)}
+                  ·
+                  ${service.time}
+                </p>
+
+
+                <p>
+                  📍 Auburn, WA
+                </p>
+
+
+                ${
+                  service.pastor
+                    ? `
+                      <p>
+                        <strong>
+                          ${service.pastor}
+                        </strong>
+                      </p>
+                    `
+                    : ""
+                }
+
+              </div>
+
+            </article>
+
+          `;
+
+        })
+        .join("");
+
+  }
+
+
+  /*
+   * =====================================================
+   * MOBILE MENU
+   * =====================================================
+   */
+
   const menuButton =
-    document.querySelector(".menu-toggle");
+    document.querySelector(
+      ".menu-toggle"
+    );
 
   const navigation =
-    document.querySelector(".navigation");
-
-
-  menuButton.addEventListener("click", () => {
-
-    navigation.classList.toggle("active");
-
-    const isOpen =
-      navigation.classList.contains("active");
-
-    menuButton.setAttribute(
-      "aria-expanded",
-      isOpen
+    document.querySelector(
+      ".navigation"
     );
 
-    menuButton.setAttribute(
-      "aria-label",
-      isOpen
-        ? "Close navigation menu"
-        : "Open navigation menu"
-    );
 
-  });
+  menuButton.addEventListener(
+    "click",
+    () => {
 
+      navigation.classList.toggle(
+        "active"
+      );
+
+      const isOpen =
+        navigation.classList.contains(
+          "active"
+        );
+
+
+      menuButton.setAttribute(
+        "aria-expanded",
+        isOpen
+      );
+
+
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen
+          ? "Close navigation menu"
+          : "Open navigation menu"
+      );
+
+    }
+  );
+
+
+  /*
+   * Close mobile menu after selecting
+   * a navigation link.
+   */
 
   document
-    .querySelectorAll(".navigation a")
+    .querySelectorAll(
+      ".navigation a"
+    )
     .forEach(link => {
 
-      link.addEventListener("click", () => {
+      link.addEventListener(
+        "click",
+        () => {
 
-        navigation.classList.remove("active");
+          navigation.classList.remove(
+            "active"
+          );
 
-        menuButton.setAttribute(
-          "aria-expanded",
-          "false"
-        );
 
-        menuButton.setAttribute(
-          "aria-label",
-          "Open navigation menu"
-        );
+          menuButton.setAttribute(
+            "aria-expanded",
+            "false"
+          );
 
-      });
+
+          menuButton.setAttribute(
+            "aria-label",
+            "Open navigation menu"
+          );
+
+        }
+      );
 
     });
+
+
+  /*
+   * =====================================================
+   * INITIALIZE WEBSITE
+   * =====================================================
+   */
+
+  displayNextService();
+
+  displayEvents();
 
 </script>
 
 
 </body>
+
 </html>
